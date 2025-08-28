@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Анкета</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Анкета</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Имя" required>
+      <input type="text" name="role" placeholder="Желаемая роль" required>
+      <input type="number" name="age" placeholder="Возраст" required>
+      <input type="email" name="email" placeholder="Ваш Gmail" required>
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="status"></p>
+  </div>
+
+  <!-- Подключаем EmailJS и наш скрипт -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
